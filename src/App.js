@@ -2,6 +2,14 @@ import React, { Component } from "react";
 
 class App extends Component {
   state = { on: true }; // on: false will turn switch off//
+
+      // Event Handler
+
+      toggle = () => {
+        const isOn = this.state.on;
+        this.setState = { on: !isOn };
+      };
+      
   render() {
     let wallClass = "wall off";
     if (this.state.on) {
