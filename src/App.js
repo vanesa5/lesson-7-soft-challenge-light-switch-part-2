@@ -22,3 +22,10 @@ class App extends Component {
 }
 
 export default App;
+
+// Event Handler 
+
+toggle = () => {
+  on: !isOn;
+  
+  };
