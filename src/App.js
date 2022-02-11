@@ -7,7 +7,7 @@ class App extends Component {
 
       toggle = () => {
         const isOn = this.state.on;
-        this.setState = { on: !isOn };
+        this.setState({ on: !isOn });
       };
       
   render() {
@@ -19,7 +19,7 @@ class App extends Component {
       <div className={wallClass}>
         <div className="switch-plate">
           <div className="screw" />
-          <div className="switch">
+          <div className="switch" onClick={this.toggle}>
             <div className="switch-handle" />
           </div>
           <div className="screw" />
@@ -30,10 +30,3 @@ class App extends Component {
 }
 
 export default App;
-
-// Event Handler 
-
-toggle = () => {
-  on: !isOn;
-  
-  };
